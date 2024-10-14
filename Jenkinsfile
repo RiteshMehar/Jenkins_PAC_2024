@@ -19,12 +19,16 @@ pipeline {
                 echo 'Hi Test'
             }
           }
-          stage('Deploy') {
+	  stage('QAT') {
+               steps {
+                echo 'Hi QAT'
+            }
+	  }
+	  stage('Deploy') {
                steps {
                 echo 'Hi Deploy'
             }
           }
-         }
-    
+	  
     
 }
