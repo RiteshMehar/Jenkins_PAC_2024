@@ -6,11 +6,12 @@ pipeline {
           stage('SCM') {
                steps {
                 echo 'Hi SCM'
-                git branch: 'main', url: 'https://github.com/RiteshMehar/jenkins_2024_test1.git'
+		git branch: 'main', url: 'https://github.com/RiteshMehar/jenkins_2024_test1.git'
+
             }
           }
           stage('Build') {
-               steps {
+             steps {
                 echo 'Hi Build'
             }  
           }
@@ -23,11 +24,13 @@ pipeline {
                steps {
                 echo 'Hi QAT'
             }
-	  }
-	  stage('Deploy') {
+          }
+          stage('Deploy') {
                steps {
                 echo 'Hi Deploy'
             }
           }
-	  
          }
+    
+    
+}
